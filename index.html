@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jaimin's Portfolio</title>
+</head>
+<body>
+    <header>
+        <span class="header-title">Jaimin's Portfolio</span>
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contect</a></li>
+        </ul>
+
+        <div class="menu-icon" onClick="menuToggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <section id="Home">
+        <div class="self-introduction">
+            <span class="span-greet">Hey, my name is</span><br>
+            <span class="span-name">Jaimin Suthar</span><br>
+            <span class="span-desg">And I'm a Web Developer</span>
+        </div>
+
+        <div class="self-img">
+            <img src="./assets/self.png"/>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="about-container">
+
+            <div class="about-row">
+                <div class="about-col">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-p">Hey, my name is Jaimin Suthar and I'm a Web Developer. Right now i'm completing my BE Computer Science and Engineerig at Government Engineerig Collag Patan, I have ability to convert Photoshop design into a Web Page. I'm highly motivated and eanger to learn new skills. I have ability to produce best result in pressure situation. I have ability to work as individual as well as group and i'm passionate about implementing and launching new projects.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links  active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                    </div>
+
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Front-End</span><br>HTML, CSS, JavaScript, React.Js, Tailwind CSS & Bootstrap</li>
+                            <li><span>Back-End</span><br>Node.Js, Express.Js & PHP</li>
+                            <li><span>Database</span><br>MongoDB & Mysql</li>
+                            <li><span>Development</span><br>Wordpress, Git/Github, Figma, VS Code, NPM, Canva & MS Office</li>
+                        </ul>
+                    </div>
+
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>Ongoing</span><br>Bechlor of Computer Science & Engineering from GEC, Patan</li>
+                            <li><span>2021</span><br>Diploma in Computer Engineerig from KD Polytechnic, Patan</li>
+                            <li><span>2018</span><br>SSC from Shree Ogad Vidhya Mandir, Thara</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="Projects">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="card-container">
+            <div class="cards">
+                <span>GTU Student Portal (Bootstrap)</span>
+                <a href="https://github.com/Jaimin78/GTU-Student-Portal-Bootstrap" target="_blank"><Button>View Project </Button></a>
+            </div>
+
+            <div class="cards">
+                <span>E-Commerce Dashboard (React.js)</span>
+                <a href="https://github.com/Jaimin78/E-Commerce-Dashboard" target="_blank"><Button>View Project </Button></a>
+            </div>
+
+            <div class="cards">
+                <span>Instagram Clone (Tailwind CSS)</span>
+                <a href="https://github.com/Jaimin78/Instagram-Clone-Tailwind-CSS" target="_blank"><Button>View Project </Button></a>
+            </div>
+
+            <div class="cards">
+                <span>Pizza Shop (Bootstrap)</span>
+                <a href="https://github.com/Jaimin78/Pizza-Shop-Bootstrap" target="_blank"><Button>View Project </Button></a>
+            </div>
+
+            <div class="cards">
+                <span>Crypto Watch (Chart.js)</span>
+                <a href="https://github.com/Jaimin78/Crypto-Watch" target="_blank"><Button>View Project </Button></a>
+            </div>
+
+            <div class="cards">
+                <span>Todo List</span>
+                <a href="https://github.com/Jaimin78/Todo-List" target="_blank"><Button>View Project </Button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h1 class="sub-title"> Contect </h1>
+        <div class="contact-container">
+            <div class="contact-me">
+                <div class="p-info">
+                    <div class="p-box">
+                        <img src="./assets/email.svg" />
+                        <span>Jaiminsuthar7802@gmail.com</span>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/jaiminsuthar"  target="_blank"><img src="./assets/linkedin.svg" /></a>
+                    <a href="https://www.instagram.com/its_jaimin78" target="_blank"><img src="./assets/instagram.svg" /></a>
+                    <a href="https://www.twitter.com/its_jaimin78" target="_blank"><img src="./assets/twitter.svg" /></a>
+                    <a href="https://www.jtechnologyinfo.wordpress.com" target="_blank"><img src="./assets/website.svg" /></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://api.sheetmonkey.io/form/ihumj4j4S2B9Et3A2fuQSU" method="post">
+                    <div class="form">
+                        <input type="text" name="Name" placeholder="Name" required />
+                    </div>
+                    <div class="form">
+                        <input type="text" name="Email" placeholder="Email" required />
+                    </div>
+                    <div class="form">
+                        <input type="text" name="Message" placeholder="Message" required />
+                    </div>
+                        <input type="hidden" name="Date" value="x-sheetmonkey-current-date-time">
+                        <input type="hidden" name="x-sheetmonkey-redirect" value="#Contact">
+                    <div class="form">
+                        <input type="submit" class="submit" value="Send">
+                    </div>   
+                </form>
+            </div>   
+        </div>
+    </section>
+
+    <footer>
+        Made with &#10084; By Jaimin Suthar
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
